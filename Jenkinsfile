@@ -20,7 +20,8 @@ pipeline {
 
     stage ('Install node'){
       steps{ 
-          
+          sh 'cd hellodolphin-webproject-5-Easter'
+          sh 'ls'
       }
     }
     
