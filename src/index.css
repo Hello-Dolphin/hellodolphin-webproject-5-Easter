@@ -8,33 +8,58 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #b1e1fc;
+
+  /* ห้ามลบเด็ดขาด !! */
+  overflow-x: hidden;
 }
+  /* ก็ห้ามลบอีกนั้นแหละ */
+  html {
+    scroll-behavior: smooth;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-normal {
-  color: red;
-}
-
 p {
   font-family: "Mali";
   font-weight: bold;
 }
-.prayuth {
+/* Home and About pages */
+.clouding1 {
   position: absolute;
-  animation: mymove 20s 3s infinite;
+  animation: anihome 20s 6s infinite;
 }
-.prawit {
+.clouding2 {
   position: absolute;
-  animation: mymove 20s infinite;
+  animation: anihome 40s infinite;
 }
-.pranuth {
+.clouding3 {
   position: absolute;
-  animation: mymove 20s 2s infinite;
+  animation: aniabout 30s 3s infinite;
 }
+normal {
+  color: red;
+}
+.eggrotate {
+  transform: rotate(12.06deg);
+}
+.mainlogo {
+  position: relative;
+  left: 31%;
+  display: inline-block;
+}
+.mainlogo .secondlogo {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+.mainlogo:hover .secondlogo {
+  display: inline;
+}
+/* - - - - - - - - - */
 
 .test2 {
   position: relative;
@@ -135,13 +160,20 @@ p {
 .content-center{
   justify-content: center;
 }
-
-@keyframes mymove {
-  0%{ left: -33vh;}
-  25%{ left: -15vh;}
-  50%{ left: -33vh;}
-  75%{ left: -15vh;}
-  100%{ left: -33vh;}
+/* Keyframes for home and about pages */
+@keyframes anihome {
+  0%{ left: -30vh;}
+  25%{ left: -25vh;}
+  50%{ left: -30vh;}
+  75%{ left: -25vh;}
+  100%{ left: -30vh;}
+}
+@keyframes aniabout {
+  0%{ left: -35vh;}
+  25%{ left: -25vh;}
+  50%{ left: -35vh;}
+  75%{ left: -25vh;}
+  100%{ left: -35vh;}
 }
 
 .counter2{

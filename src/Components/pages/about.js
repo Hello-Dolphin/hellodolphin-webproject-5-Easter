@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll'
+import "animate.css/animate.min.css";
 /* Image */
 import eggs1 from '../images/Pic/egg3.png'
 import eggs2 from '../images/Pic/egg4.png'
@@ -54,21 +56,26 @@ const Eggs = styled.img`
     z-index: 1;
 `
 const Contentblock = styled.div`
-    position: center;
+    max-width: 720px;
+    margin: 0 auto;
     background: #F5CCD2;
     border-radius: 50px;
+    display : flex;
+    justify-content:center;
+    padding:10px;
 `
 const Content = styled.p`
     border: 2px dashed #333333;
-    border-radius: 50px;    
+    border-radius: 50px;
     font-size: 20px;
     padding: 30px;
+    /* max-width: 1000px; */
 `
 export default class about extends Component {
     render() {
         return (
             <React.Fragment>
-                <Container className="container-fluid">
+                <Container id="about" className="container-fluid">
                     <div className="row">
                     <AnimateCloud className="clouding3" src={cd1} marginTop="-23%" />
                         <div className="col-3">
@@ -77,6 +84,7 @@ export default class about extends Component {
                             <Eggs src={eggs2} className="eggrotate" left="70%" marginTop="90%" />
                         </div>
                         <div className="col-6">
+                            <ScrollAnimation animateIn="animate__fadeInUp" duration={2} delay={2} initiallyVisible={false}>
                             <Ab2 src={ab2} />
                             <Contentblock>
                                 <Content>เป็นหนึ่งในเทศกาลที่สำคัญมากที่สุดในศาสนาคริสต์
@@ -86,6 +94,7 @@ export default class about extends Component {
                                     <normal>“วันอาทิตย์”</normal>
                                 </Content>
                             </Contentblock>
+                            </ScrollAnimation>
                         </div>
                         <div className="col-3">
                             <Mascot src={mascot} />

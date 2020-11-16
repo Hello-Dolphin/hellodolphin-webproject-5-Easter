@@ -5,14 +5,14 @@ const Container = styled.div`
   width: 100%;
   height:auto;
   min-height: 100vh; 
-text-align:center; 
+    text-align:center; 
 `
 
 export default class symbol extends Component {
     render() {
         return (
             <div>
-                <Container bgcolor="black">
+                <Container id="symbol" bgcolor="black">
                     <h2>Symbol</h2>
                 </Container>
             </div>

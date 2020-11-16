@@ -9,6 +9,7 @@ import eg4 from './images/navbar/home.png'
 import eg5 from './images/navbar/symbol.png'
 /* CSS */
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 const yourAnimation = keyframes`
     from {
         transform: rotate(0deg);
@@ -41,18 +42,22 @@ const Eggs = styled.img`
         animation: ${yourAnimation} 1s ;
     }
 `
+const Waybackhome = styled.button`
+    float: right;
+`
 export default class navbar extends Component {
     render() {
         return (
             <React.Fragment>
                 <Container className="container-fluid">
                     {/* <Cloud src={cld02} marginTop="-60px"/> */}
-                    <Cloud src={cld01} marginTop="-60px" />
-                    <Eggs src={eg4} left="142px" top="128px" />
-                    <Eggs src={eg1} left="439px" top="134px" />
-                    <Eggs src={eg3} left="717px" top="124px" />
-                    <Eggs src={eg5} left="1004px" top="104px" />
-                    <Eggs src={eg2} left="1299px" top="108px" />
+                    <Cloud src={cld01}/>
+                    <a href="#home"><Eggs src={eg4} left="142px" top="10px" /></a>
+                    <a href="#about"><Eggs src={eg1} left="439px" top="10px" /></a>
+                    <a href="#history"><Eggs src={eg3} left="717px" top="10px" /></a>
+                    <a href="#symbol"><Eggs src={eg5} left="1004px" top="10px" /></a>
+                    <a href="#activity"><Eggs src={eg2} left="1299px" top="10px" /></a>
+                    <Waybackhome><a href="#home" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a></Waybackhome>
                 </Container>
             </React.Fragment>
         )

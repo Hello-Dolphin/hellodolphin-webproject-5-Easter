@@ -20,7 +20,7 @@ export default class activity extends Component {
     render() {
         return (
             <div>
-                <Container bgcolor="#A2E3FF">
+                <Container id="activity" bgcolor="#A2E3FF">
                     <div className="counter2">
                         <img className="cloud3" src={cloud3} />
                         <img className="cloud2" src={cloud2} />
