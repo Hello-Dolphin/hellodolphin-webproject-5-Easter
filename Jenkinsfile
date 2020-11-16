@@ -29,6 +29,7 @@ pipeline {
           
           sh 'pwd'
           sh 'ls'
+          sh 'yarn' 
           
           
         
