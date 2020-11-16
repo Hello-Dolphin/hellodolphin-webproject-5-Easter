@@ -13,26 +13,20 @@ pipeline {
   // Start Pipeline
   stages {
 
-    /*stage('Clone Hellodolphin-WebPR code') {
+    stage('Clone Hellodolphin-WebPR code') {
       // Steps to run build
-      steps {
-          sh 'git clone https://github.com/Hello-Dolphin/hellodolphin-webproject-5-Easter.git'
-          
-      } // End steps
-    } // End stage*/
+      // End steps
+    } // End stage
 
     stage ('Install node'){
       steps{ 
-          sh 'node -v' // 8.10.0
-          sh 'npm -v' // 5.6.0
+          
       }
     }
     
-    stage ('Depndencies'){
+    stage ('Dependencies'){
       steps{
-          sh 'pwd'
-          sh 'ls'
-          sh 'yarn' 
+          ' 
       }
     }
    
