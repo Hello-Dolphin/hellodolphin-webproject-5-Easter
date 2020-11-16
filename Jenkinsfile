@@ -6,7 +6,9 @@ def scmVars
 pipeline {
 
   // Configure Jenkins Slave
-  agent any
+  agent {
+    docker { image 'node:12.19.0' }
+  }
 
   // Start Pipeline
   stages {
