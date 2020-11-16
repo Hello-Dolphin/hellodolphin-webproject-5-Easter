@@ -11,13 +11,13 @@ pipeline {
   // Start Pipeline
   stages {
 
-    stage('Clone Hellodolphin-WebPR code') {
+    /*stage('Clone Hellodolphin-WebPR code') {
       // Steps to run build
       steps {
           sh 'git clone https://github.com/Hello-Dolphin/hellodolphin-webproject-5-Easter.git'
           
       } // End steps
-    } // End stage
+    } // End stage*/
 
     stage ('Install dependencies'){
       steps{
@@ -27,6 +27,8 @@ pipeline {
           sh 'nvm install 12.19.0'
           sh 'npm install -g yarn'
           
+          sh 'pwd'
+          sh 'ls'
           
           
         
