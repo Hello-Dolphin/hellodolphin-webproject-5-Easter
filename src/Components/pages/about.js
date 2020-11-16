@@ -34,6 +34,7 @@ const AnimateCloud = styled.img`
     left: -33vh;
     position: absolute;
     margin-top: ${props => props.marginTop};
+    overflow: hidden;
 `
 const Mascot = styled.img`
     width: 50%;
