@@ -60,9 +60,8 @@ const Contentblock = styled.div`
     margin: 0 auto;
     background: #F5CCD2;
     border-radius: 50px;
-    display : flex;
-    justify-content:center;
-    padding:10px;
+    display: flex;
+    padding: 10px;
 `
 const Content = styled.p`
     border: 2px dashed #333333;

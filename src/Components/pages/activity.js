@@ -29,7 +29,7 @@ export default class activity extends Component {
                         <div className="rectangle">
                             <img class="draw4 " src={draw4} />
                             <div className="ac1">
-                                <div className="">
+                                <div>
                                     <p>ชาวคริสต์แต่ละครอบครัวจะแต่งตัวสวยงาม</p>
                                     <p> มาร่วมพิธีกรรมในโบสถ์พร้อมร้องเพลงสรรเสริญ</p>
                                     <p>พระเจ้านอกจากนี้บางครอบครัวก็มักจะตกแต่งไข่</p>
@@ -40,21 +40,15 @@ export default class activity extends Component {
                         <div className="rectangle2">
                             <img class="easter1 " src={easter1} />
                             <div className="ac1">
-                                <div className="">
+                                <div>
                                     <p>ส่วนบางโบสถ์ก็จัดกิจกรรมร่วมรับประทาน</p>
                                     <p> อาหารเพื่อเฉลิมฉลองอย่างยิ่งใหญ่รวมไปถึงจัดเกม </p>
                                     <p>สนุกๆให้แต่ละครอบครัวหาไข่อีสเตอร์ที่ถูกซ่อนเอา</p>
                                     <p>ไว้ในพุ่มไม้หรือกอหญ้าต่างๆเพื่อให้ผู้เฉลิมฉลองได้</p>
                                     <p>ช่วยกันค้นหาและได้ใช้เวลาแห่งความสุขในวันอีสเตอร์ร่วมกัน</p>
-
-
-
-
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </Container>
             </div>
