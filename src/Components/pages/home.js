@@ -53,7 +53,6 @@ export default class home extends Component {
                             <Logo src={etf}/>
                             <AnimateCloud className="prayuth" src={cd2} marginTop="40vh"/>
                             <Mascot src={mascot}/>
-                            {/* <Cloud src={cd1} marginTop="70vh"/> */}
                             </div>
                         </div>
                 </Container>
