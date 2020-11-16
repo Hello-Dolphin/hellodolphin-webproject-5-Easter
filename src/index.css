@@ -8,9 +8,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #b1e1fc;
-  overflow-x: hidden;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -24,32 +23,164 @@ p {
   font-family: "Mali";
   font-weight: bold;
 }
-.clouding1 {
+.prayuth {
   position: absolute;
-  animation: mymove 40s 5s infinite;
+  animation: mymove 20s 3s infinite;
 }
-.clouding2 {
+.prawit {
   position: absolute;
-  animation: mymove 30s infinite;
+  animation: mymove 20s infinite;
 }
-.clouding3 {
+.pranuth {
   position: absolute;
-  animation: aniabout 40s 3s infinite;
+  animation: mymove 20s 2s infinite;
 }
-.eggrotate {
-  transform: rotate(12.06deg);
+
+.test2 {
+  position: relative;
+  width: 100%;
 }
+.counter{
+  position: relative;
+  
+}
+.ac{
+  position: absolute;
+  display:block;
+  right: 40%;
+  top:10%;
+  width :20%;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
+}
+.cloud3{
+  position: absolute;
+  display:block;
+  top:3%;
+  right: 58%;
+  height:30%; 
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
+  transform: rotate(5.4deg);
+}
+.rabbit4 {
+  position: absolute;
+  display:block;
+  text-align: center;
+  top:30%;
+  right: 45%;
+  width :17%;
+  height:52%; 
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
+  }
+
+.cloud2{
+  position: absolute;
+  display:block;
+  top:-25%;
+  right: 75%;
+  height:40%; 
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cloud2l{
+  position: absolute;
+  display:block;
+  top:-3%;
+  left: 70%;
+  height:30%; 
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+.br{
+  position: absolute;
+  display:block;
+  top:-10%;
+  right: -0%;
+  height:35%; 
+  /* filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.footer{
+  width: 100%;
+  background-color: #FFE3AC;
+  padding: 2em;
+}
+.footer h2{
+  font-family: Mali;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer p{
+  font-family: Mali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin:2em;
+  margin-top:1.5em;
+  color: #000000;
+}
+
+.flex{
+  display:flex;
+}
+.content-center{
+  justify-content: center;
+}
+
 @keyframes mymove {
   0%{ left: -33vh;}
-  25%{ left: -18vh;}
+  25%{ left: -15vh;}
   50%{ left: -33vh;}
-  75%{ left: -18vh;}
+  75%{ left: -15vh;}
   100%{ left: -33vh;}
 }
-@keyframes aniabout {
-  0%{ left: -35vh;}
-  25%{ left: -20vh;}
-  50%{ left: -35vh;}
-  75%{ left: -20vh;}
-  100%{ left: -35vh;}
+
+.counter2{
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+}
+.rabbit-fly{
+  position: absolute;
+  right: 40%;
+  top:30%;
+  width :20%;
+  filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
+}
+.draw4{
+  width :80%;
+  border: 1px dashed #000000;
+  border-radius: 50px;
+}
+
+.draw4-inside{
+  position: absolute;
+  right: 65%;
+  top:30%;
+  width :30%;
+  border: 1px dashed #000000;
+  border-radius: 50px;
+  
+}
+.rectangle{
+  position: absolute;
+  right: 65%;
+  top:30%;
+  background-color: lightpink;
+  border-radius: 10px;
+  padding: 0.5em;
+  height: 15%;
+ 
+}
+.border-bew{
+  border: 1px dashed #000000;
+  border-radius: 50px;
 }
