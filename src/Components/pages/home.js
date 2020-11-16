@@ -49,9 +49,9 @@ export default class home extends Component {
                 <Container className="container-fluid">
                     <div className="row">
                         <div className="col-12"> 
-                            <AnimateCloud className="prawit" src={cd3} marginTop="32.5vh"/>
+                            <AnimateCloud className="clouding1" src={cd3} marginTop="33.5vh"/>
                             <Logo src={etf}/>
-                            <AnimateCloud className="prayuth" src={cd2} marginTop="40vh"/>
+                            <AnimateCloud className="clouding2" src={cd2} marginTop="41vh"/>
                             <Mascot src={mascot}/>
                             </div>
                         </div>
