@@ -27,10 +27,6 @@ pipeline {
           sh 'nvm install 12.19.0'
           sh 'npm install -g yarn'
           
-          sh 'whoami'
-          sh 'pwd'
-          sh 'ls'
-          
           
           
         
