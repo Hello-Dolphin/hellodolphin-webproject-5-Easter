@@ -26,7 +26,7 @@ const Cloud = styled.img`
 `
 const AnimateCloud = styled.img`
     width: 125%;
-    left: -33vh;
+    left: -30vh;
     position: absolute;
     margin-top: ${props=> props.marginTop};
 `
@@ -41,12 +41,11 @@ const Logo = styled.img`
     position : absolute;
     left: 30%;
 `
-
 export default class home extends Component {
     render() {
         return (
             <React.Fragment>
-                <Container className="container-fluid">
+                <Container id="home" className="container-fluid">
                     <div className="row">
                         <div className="col-12"> 
                             <AnimateCloud className="clouding1" src={cd3} marginTop="33.5vh"/>

@@ -8,13 +8,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #b1e1fc;
+  overflow-x: hidden;
 }
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 normal {
   color: red;
 }
@@ -23,17 +23,17 @@ p {
   font-family: "Mali";
   font-weight: bold;
 }
-.prayuth {
+.clouding1 {
   position: absolute;
-  animation: mymove 20s 3s infinite;
+  animation: anihome 20s 6s infinite;
 }
-.prawit {
+.clouding2 {
   position: absolute;
-  animation: mymove 20s infinite;
+  animation: anihome 40s infinite;
 }
-.pranuth {
+.clouding3 {
   position: absolute;
-  animation: mymove 20s 2s infinite;
+  animation: aniabout 30s 3s infinite;
 }
 
 .test2 {
@@ -135,12 +135,19 @@ p {
   justify-content: center;
 }
 
-@keyframes mymove {
-  0%{ left: -33vh;}
-  25%{ left: -15vh;}
-  50%{ left: -33vh;}
-  75%{ left: -15vh;}
-  100%{ left: -33vh;}
+@keyframes anihome {
+  0%{ left: -30vh;}
+  25%{ left: -25vh;}
+  50%{ left: -30vh;}
+  75%{ left: -25vh;}
+  100%{ left: -30vh;}
+}
+@keyframes aniabout {
+  0%{ left: -35vh;}
+  25%{ left: -25vh;}
+  50%{ left: -35vh;}
+  75%{ left: -25vh;}
+  100%{ left: -35vh;}
 }
 
 .counter2{
