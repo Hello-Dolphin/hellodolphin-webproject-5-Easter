@@ -12,6 +12,10 @@ body {
   /* ห้ามลบเด็ดขาด !! */
   overflow-x: hidden;
 }
+  /* ก็ห้ามลบอีกนั้นแหละ */
+  html {
+    scroll-behavior: smooth;
+  }
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
