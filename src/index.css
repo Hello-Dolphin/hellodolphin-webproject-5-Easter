@@ -76,8 +76,8 @@ normal {
 }
 .cloud3{
   position: absolute;
-  display:block;
-  top:3%;
+  display: block;
+  top:5%;
   right: 58%;
   height:30%; 
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
@@ -93,6 +93,11 @@ normal {
   height:52%; 
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
   }
+  img.rabbit4:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  
 .cloud2{
   position: absolute;
   display:block;
@@ -237,4 +242,13 @@ normal {
   padding: 2em ;
   border: 2px dashed #333333;
   padding: 30px;
+}
+.bird2 {
+  position: absolute;
+  width: 17%;
+  left: 202.89px;
+  right: 10.11px;
+  top: 50.45px;
+  transform: rotate(-16.07deg);
+  z-index: 1;
 }

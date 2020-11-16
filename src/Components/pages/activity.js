@@ -6,22 +6,23 @@ import draw4 from '../images/Pic/draw4.png'
 import easter1 from '../images/Pic/easter1.png'
 import rabbit3 from '../images/Mascot/rabbit3.png'
 import cloud2 from '../images/Pic/cloud2.png'
+import bird2 from '../images/Pic/b2.png'
 import '../../index.css'
 
 const Container = styled.div`
-    background-color: ${props => props.bgcolor};
+    background-color: #A2E3FF;
     width: 100%;
     height:100%;
     min-height: 105vh; 
     text-align:center; 
 `
-
 export default class activity extends Component {
     render() {
         return (
             <div>
-                <Container id="activity" bgcolor="#A2E3FF">
+                <Container id="activity">
                     <div className="counter2">
+                        <img className="bird2" src={bird2}/>
                         <img className="cloud3" src={cloud3} />
                         <img className="cloud2" src={cloud2} />
                         <img className="ac" src={ac} />
