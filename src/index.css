@@ -75,7 +75,7 @@ p {
 .cloud2{
   position: absolute;
   display:block;
-  top:-25%;
+  top:60%;
   right: 75%;
   height:40%; 
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
@@ -102,13 +102,14 @@ p {
 .footer{
   width: 100%;
   background-color: #FFE3AC;
-  padding: 2em;
+  padding: 3em;
 }
 .footer h2{
+  margin-top:1em;
   font-family: Mali;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 23px;
   text-align: center;
 
@@ -120,7 +121,7 @@ p {
   font-family: Mali;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 18px;
   text-align: center;
   margin:2em;
@@ -150,37 +151,85 @@ p {
 }
 .rabbit-fly{
   position: absolute;
-  right: 40%;
+  right: 42%;
   top:30%;
   width :20%;
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
 }
 .draw4{
   width :80%;
-  border: 1px dashed #000000;
+  /* border: 1px dashed #000000; */
   border-radius: 50px;
+  padding: 2em ;
 }
 
-.draw4-inside{
+/* .draw4-inside{
   position: absolute;
   right: 65%;
   top:30%;
   width :30%;
   border: 1px dashed #000000;
   border-radius: 50px;
-  
-}
+  padding: 2em ;
+} */
 .rectangle{
   position: absolute;
-  right: 65%;
+  right: 63%;
   top:30%;
   background-color: lightpink;
-  border-radius: 10px;
-  padding: 0.5em;
-  height: 15%;
- 
+  border: 1px dashed #000000;
+  border-radius: 50px;
+  padding: 2em 0.1em 0.1em 2em;
+  width :30%;
+  height: 45%;
 }
+
 .border-bew{
   border: 1px dashed #000000;
   border-radius: 50px;
+}
+.content-around{
+  justify-content: space-around;
+}
+
+.ac1{
+  width: 100%;
+  padding: 1em;
+}
+.ac1 p{
+  font-family: Mali;
+  font-style: normal;
+  font-weight: normal;
+  font-size: .75em;
+  line-height: 18px;
+  text-align: center;
+  margin:1em;
+  margin-top:1.5em;
+  color: #000000;
+}
+.easter1{
+  width :73%;
+  /* border: 1px dashed #000000; */
+  border-radius: 50px;
+}
+.easter1-inside{
+  position: absolute;
+  right: 10%;
+  /* top:30%; */
+  width :30%;
+  border: 1px dashed #000000;
+  border-radius: 50px;
+  padding: 0em ;
+  
+}
+.rectangle2{
+  position: absolute;
+  right: 10%;
+  top:30%;
+  background-color: lightpink;
+  border: 1px dashed #000000;
+  border-radius: 50px;
+  padding: 2em 0.1em 0.1em 2em;
+  width :30%;
+  height: 45%;
 }
