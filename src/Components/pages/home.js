@@ -32,7 +32,8 @@ const Mascot = styled.img`
 `
 const Logo = styled.img`
     width : 38%;
-    left: 0px;
+    position: absolute;
+    left: 33%;
 `
 export default class home extends Component {
     render() {
@@ -42,10 +43,7 @@ export default class home extends Component {
                     <div className="row">
                         <div className="col-12"> 
                             <AnimateCloud className="clouding1" src={cd3} marginTop="33.5vh"/>
-                            <div className="mainlogo">
                             <Logo src={etf} alt="mainlogo"/>
-                            <Logo src={etf2} className="secondlogo" alt="secondlogo"/>
-                            </div>
                             <AnimateCloud className="clouding2" src={cd2} marginTop="41vh"/>
                             <Mascot src={mascot}/>
                             </div>
