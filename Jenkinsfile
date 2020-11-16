@@ -20,12 +20,9 @@ pipeline {
     } // End stage*/
 
     stage ('Install node'){
-      steps{
-          sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash'
-          sh 'export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"'
-          sh '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm'
-          sh 'nvm install 12.19.0'
-          sh 'npm install -g yarn'   
+      steps{ 
+          sh 'node -v' // 8.10.0
+          sh 'npm -v' // 5.6.0
       }
     }
     
