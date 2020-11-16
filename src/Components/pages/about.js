@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import ScrollAnimation from 'react-animate-on-scroll'
+import "animate.css/animate.min.css";
 /* Image */
 import eggs1 from '../images/Pic/egg3.png'
 import eggs2 from '../images/Pic/egg4.png'
@@ -82,6 +84,7 @@ export default class about extends Component {
                             <Eggs src={eggs2} className="eggrotate" left="70%" marginTop="90%" />
                         </div>
                         <div className="col-6">
+                            <ScrollAnimation animateIn="animate__fadeInUp" duration={2} delay={2} initiallyVisible={false}>
                             <Ab2 src={ab2} />
                             <Contentblock>
                                 <Content>เป็นหนึ่งในเทศกาลที่สำคัญมากที่สุดในศาสนาคริสต์
@@ -91,6 +94,7 @@ export default class about extends Component {
                                     <normal>“วันอาทิตย์”</normal>
                                 </Content>
                             </Contentblock>
+                            </ScrollAnimation>
                         </div>
                         <div className="col-3">
                             <Mascot src={mascot} />

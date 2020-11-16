@@ -42,7 +42,24 @@ p {
 normal {
   color: red;
 }
-
+.eggrotate {
+  transform: rotate(12.06deg);
+}
+.mainlogo {
+  position: relative;
+  left: 31%;
+  display: inline-block;
+}
+.mainlogo .secondlogo {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+.mainlogo:hover .secondlogo {
+  display: inline;
+}
+/* - - - - - - - - - */
 
 .test2 {
   position: relative;

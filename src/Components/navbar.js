@@ -9,6 +9,7 @@ import eg4 from './images/navbar/home.png'
 import eg5 from './images/navbar/symbol.png'
 /* CSS */
 import 'bootstrap/dist/css/bootstrap.min.css'
+
 const yourAnimation = keyframes`
     from {
         transform: rotate(0deg);
