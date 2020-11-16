@@ -30,7 +30,7 @@ const Cloud = styled.img`
     margin-top: ${props => props.marginTop};
 `
 const AnimateCloud = styled.img`
-    width: 125%;
+    width: 130%;
     left: -33vh;
     position: absolute;
     margin-top: ${props => props.marginTop};
@@ -42,6 +42,7 @@ const Mascot = styled.img`
     position :absolute;
 `
 const Contentblock = styled.div`
+    padding : 0em;
     position: center;
     background-color: #F5CCD2;
     border-radius: 50px;
@@ -64,7 +65,7 @@ export default class about extends Component {
             <React.Fragment>
                 <Container className="container-fluid">
                     <div className="row">
-                        <AnimateCloud className="pranuth" src={cd1} left="0%" marginTop="-23%" />
+                    <AnimateCloud className="pranuth" src={cd1} left="0%" marginTop="-23%" />
                         <div className="col-4">
                             <Cloud src={cd01} left="-25%" marginTop="65%" />
                         </div>
