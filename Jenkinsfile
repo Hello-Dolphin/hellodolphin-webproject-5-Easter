@@ -26,8 +26,11 @@ pipeline {
           sh '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm'
           sh 'nvm install 12.19.0'
           sh 'npm install -g yarn'
-          sh 'cd hellodolphin-webproject-5-Easter'
-          sh 'yarn'
+          
+          sh 'whoami'
+          sh 'pwd'
+          sh 'ls'
+          
           
           
         
