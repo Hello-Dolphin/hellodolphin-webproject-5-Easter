@@ -14,9 +14,9 @@ pipeline {
 
     stage ('Install node'){
       steps{ 
-          sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash'
-          sh 'export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"'
-          sh '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
+          sh 'sudo apt update'
+          sh 'sudo apt install nodejs'
+          sh 'sudo apt install npm'
       }
     }
     
