@@ -53,7 +53,13 @@ const Eggs = styled.img`
     margin-top: ${props => props.marginTop};
     filter: drop-shadow(5px 6px 4px rgba(0,0,0,0.25));
     :hover{
-        animation: ${yourAnimation} 1s ;
+        width:100px;
+        transition: All .5s ease-in-out;
+        animation: ${yourAnimation} .9s ;
+        z-index: 99;
+        
+        
+        
     }
     position: fixed;
     z-index: 39;
