@@ -13,6 +13,8 @@ import cd1 from '../images/Pic/cd1.png'
 /* CSS */
 import '../../index.css'
 
+
+
 const Container = styled.div`
     background-color: #A2E3FF;
     width: 100%;
@@ -96,7 +98,7 @@ export default class about extends Component {
                             </ScrollAnimation>
                         </div>
                         <div className="col-3">
-                            <Mascot src={mascot} />
+                            <Mascot src={mascot} className="swing" />
                             <Cloud src={cd02} className="clouding2" left="0%" marginTop="130%" />
                         </div>
                     </div>
