@@ -10,6 +10,9 @@ import mascot from '../images/Mascot/mascot1.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../index.css'
 
+
+
+
 const Container = styled.div`
     background-color: #BBB6D6;
     width: 100%;
@@ -19,7 +22,7 @@ const Container = styled.div`
     overflow: hidden;
 `
 const AnimateCloud = styled.img`
-    width: 125%;
+    width: 150vw;
     left: -30vh;
     position: absolute;
     margin-top: ${props=> props.marginTop};
@@ -31,9 +34,9 @@ const Mascot = styled.img`
     margin-top : 9%;
 `
 const Logo = styled.img`
-    width : 38%;
-    position: absolute;
-    left: 33%;
+    width : 42vw;
+    position: relative;
+    left: 64%;
 `
 export default class home extends Component {
     render() {
@@ -43,8 +46,12 @@ export default class home extends Component {
                     <div className="row">
                         <div className="col-12"> 
                             <AnimateCloud className="clouding1" src={cd3} marginTop="33.5vh"/>
-                            <Logo src={etf} alt="mainlogo"/>
-                            <AnimateCloud className="clouding2" src={cd2} marginTop="41vh"/>
+                            <div class="mainlogo">
+                                <Logo src={etf}/>
+                                <Logo src={etf2} className="secondlogo"/>
+                            </div>
+                            
+                            <AnimateCloud  className="clouding2" src={cd2} marginTop="41vh"/>
                             <Mascot src={mascot}/>
                             </div>
                         </div>
