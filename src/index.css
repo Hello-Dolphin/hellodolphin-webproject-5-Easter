@@ -24,6 +24,8 @@ p {
   font-family: "Mali";
   font-weight: bold;
 }
+
+
 /* Home and About pages */
 .clouding1 {
   position: absolute;
@@ -43,6 +45,26 @@ normal {
 .eggrotate {
   transform: rotate(12.06deg);
 }
+<<<<<<< Updated upstream
+=======
+.mainlogo {
+  position: relative;
+  left: 31%;
+  display: inline-block;
+}
+.mainlogo .secondlogo {
+  display: inline;
+  position: absolute;
+  transition: 1s;
+  top: 0;
+  opacity: 0;
+  z-index: 19;
+  
+}
+.mainlogo:hover .secondlogo {
+  opacity: 1;
+}
+>>>>>>> Stashed changes
 /* - - - - - - - - - */
 
 .test2 {
@@ -148,7 +170,7 @@ normal {
   25%{ left: -25vh;}
   50%{ left: -30vh;}
   75%{ left: -25vh;}
-  100%{ left: -30vh;}
+  100%{ left: -30vh;} 
 }
 @keyframes aniabout {
   0%{ left: -35vh;}
@@ -157,8 +179,24 @@ normal {
   75%{ left: -25vh;}
   100%{ left: -35vh;}
 }
+@keyframes swingg{
+  0%{
+    transform: rotate(10deg);
+  }
+
+  50%{
+      transform:  rotate(0deg);
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
+
 /* - - - - - - - - */
 
+.swing{
+  animation:swingg 1s linear infinite;
+}
 .counter2{
   position: relative;
   height: 100%;
