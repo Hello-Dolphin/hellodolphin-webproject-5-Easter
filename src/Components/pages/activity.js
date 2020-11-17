@@ -29,6 +29,7 @@ export default class activity extends Component {
                         <img className="rabbit-fly" src={rabbit3} />
                         <div className="rectangle">
                             <img class="draw4 " src={draw4} />
+                            
                             <div className="ac1">
                                 <div>
                                     <p>ชาวคริสต์แต่ละครอบครัวจะแต่งตัวสวยงาม</p>
@@ -40,6 +41,7 @@ export default class activity extends Component {
                         </div>
                         <div className="rectangle2">
                             <img class="easter1 " src={easter1} />
+                      
                             <div className="ac1">
                                 <div>
                                     <p>ส่วนบางโบสถ์ก็จัดกิจกรรมร่วมรับประทาน</p>
