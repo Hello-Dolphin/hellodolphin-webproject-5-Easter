@@ -89,7 +89,7 @@ export default class history extends Component {
         return (
 
           <React.Fragment>
-          <Container id="about" className="container-fluid">
+          <Container id="history" className="container-fluid">
               <div className="row">
                   <div className="col-3">
                             <Cloud src={cd01} left="-40%" marginTop="400%" />

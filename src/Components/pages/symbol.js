@@ -206,7 +206,7 @@ export default class symbol extends Component {
 
 
 
-        <Container bgcolor="#A2E3FF">
+        <Container id="symbol" bgcolor="#A2E3FF">
         <div className="row">
                   <div className="col-3"> 
                   <Cloud src={cd02} className="clouding2" right="50%" marginTop="70%" />
