@@ -30,14 +30,14 @@ const Ab2 = styled.img`
     filter: drop-shadow(5px 6px 4px rgba(0,0,0,0.25));
 `
 const Cloud = styled.img`
-    width: 150%;
+    width: 45vw;
     left: ${props => props.left};
-    position: absolute;
+    position: relative;
     margin-top: ${props => props.marginTop};
     filter: drop-shadow(5px 6px 4px rgba(0,0,0,0.25));
 `
 const AnimateCloud = styled.img`
-    width: 130%;
+    width: 160vw;
     left: -35vh;
     position: absolute;
     margin-top: ${props => props.marginTop};
@@ -78,11 +78,11 @@ export default class about extends Component {
             <React.Fragment>
                 <Container id="about" className="container-fluid">
                     <div className="row">
-                    <AnimateCloud className="clouding3" src={cd1} marginTop="-23%" />
+                    <AnimateCloud className="clouding3" src={cd1} marginTop="-48vh" />
                         <div className="col-3">
                             <Cloud src={cd01} left="-40%" marginTop="90%" />
-                            <Eggs src={eggs1} left="43%" marginTop="80%" />
-                            <Eggs src={eggs2} className="eggrotate" left="70%" marginTop="90%" />
+                            <Eggs src={eggs1} left="33%" marginTop="-80%" />
+                            <Eggs src={eggs2} className="eggrotate" left="60%" marginTop="-70%" />
                         </div>
                         <div className="col-6">
                             <ScrollAnimation animateIn="animate__fadeInUp" duration={2} delay={2} initiallyVisible={false}>
@@ -99,7 +99,7 @@ export default class about extends Component {
                         </div>
                         <div className="col-3">
                             <Mascot src={mascot} className="swing" />
-                            <Cloud src={cd02} className="clouding2" left="0%" marginTop="130%" />
+                            <Cloud src={cd02} className="cloudingrabbitt" left = "-10vw" marginTop="130%" />
                         </div>
                     </div>
                 </Container>
