@@ -319,3 +319,7 @@ normal {
   transform: rotate(-16.07deg);
   z-index: 1;
 }
+
+.eggrotate2 {
+  transform: rotate(-12.06deg);
+}

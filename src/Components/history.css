@@ -1,0 +1,54 @@
+body{
+    background-color: #A2E3FF;
+  }
+  
+  .column2{
+      float: left;
+      width: 50%;
+      padding: 2%;
+      text-align: center;
+    }
+    .column22{
+        float: right;
+        width: 50%;
+        padding: 2%;
+      }
+  
+  .column3{
+    float: right;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+  }
+  .column32{
+      float: left;
+      width: 50%;
+      padding: 2%;
+    }
+  
+  .row3:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .p2{
+      position: relative;
+      padding-top:60%;
+    }
+  
+    .p3{
+      position: relative;
+      padding-top:45%;
+    }
+  
+    .p1{
+      position: relative;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .alittlebitleft {
+      margin-left: 25%;
+    }
+  
+   
