@@ -24,8 +24,40 @@ p {
   font-family: "Mali";
   font-weight: bold;
 }
+/*For scroll bar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.623);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(255, 119, 119); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgb(253, 143, 143); 
+}
+/*----------------*/
+@keyframes swingg{
+  0%{
+    transform: rotate(10deg);
+  }
+
+  50%{
+      transform:  rotate(0deg);
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
 /* Home and About pages */
 .clouding1 {
   position: absolute;
@@ -45,8 +77,9 @@ normal {
 .eggrotate {
   transform: rotate(12.06deg);
 }
-<<<<<<< Updated upstream
-=======
+
+
+
 .mainlogo {
   position: relative;
   left: 31%;
@@ -58,13 +91,14 @@ normal {
   transition: 1s;
   top: 0;
   opacity: 0;
-  z-index: 19;
+  z-index:19;
   
 }
 .mainlogo:hover .secondlogo {
-  opacity: 1;
+  opacity:1;
+  display: inline;
 }
->>>>>>> Stashed changes
+
 /* - - - - - - - - - */
 
 .test2 {
@@ -95,10 +129,9 @@ normal {
   position: absolute;
   display:block;
   text-align: center;
-  top:30%;
-  right: 45%;
-  width :17%;
-  height:52%; 
+  top:40%;
+  right: 37vw;
+  height:25vw; 
   filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25));
   }
   img.rabbit4:hover {
@@ -125,9 +158,9 @@ normal {
 .br{
   position: absolute;
   display:block;
-  top:-10%;
+  top:-6%;
   right: -0%;
-  height:35%; 
+  width: 38vw; 
   /* filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.25)); */
 }
 .footer{
@@ -179,18 +212,7 @@ normal {
   75%{ left: -25vh;}
   100%{ left: -35vh;}
 }
-@keyframes swingg{
-  0%{
-    transform: rotate(10deg);
-  }
 
-  50%{
-      transform:  rotate(0deg);
-  }
-  100%{
-    transform: rotate(10deg);
-  }
-}
 
 /* - - - - - - - - */
 
@@ -223,9 +245,11 @@ normal {
   border-radius: 50px;
   padding: 10px;
   width : 30%;
-  height: 45%;
+  height: 50%;
   right: 63%;
   top: 30%;
+  overflow: hidden;
+  
 }
 .rectangle2{
   position: absolute;
@@ -233,9 +257,12 @@ normal {
   border-radius: 50px;
   padding: 10px;
   width :30%;
-  height: 45%;
+  height: 75%;
   right: 10%;
   top:30%;
+  overflow: hidden;
+  
+  
 }
 .border-bew{
   border: 1px dashed #000000;
@@ -247,18 +274,23 @@ normal {
 
 .ac1{
   width: 100%;
+  height: 70%;
   padding: 1em;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  
 }
 .ac1 p{
   font-family: Mali;
   font-style: normal;
   font-weight: normal;
-  font-size: .75em;
+  font-size: 1em;
   line-height: 18px;
   text-align: center;
   margin:1em;
   margin-top:1.5em;
   color: #000000;
+  
 }
 .easter1{
   width :75%;
