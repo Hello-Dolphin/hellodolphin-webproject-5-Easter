@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
 /* Images */
 import cld01 from './images/navbar/cdnav.png'
 import eg1 from './images/navbar/about.png'
@@ -29,20 +30,20 @@ const cloud = keyframes`
 
 const Container = styled.div`
     background-color: #BBB6D6;
-    width : auto;
+    width : 100%;
     height : 25vh;
+    overflow: hidden;
 `
 
 
 const Cloud = styled.img`
     width: 100%;
     left: 0px;
-    position: absolute;
     top: 0px;
     position: fixed;
     z-index: 39;
     filter: drop-shadow(5px 6px 4px rgba(0,0,0,0.25));
-    animation: ${cloud} 20s linear infinite ;
+
 `
 const Eggs = styled.img`
     width: 80px;
@@ -65,18 +66,19 @@ export default class navbar extends Component {
     render() {
         return (
             <React.Fragment>
-                <Container className="container-fluid lock">
-                    {/* <Cloud src={cld02} marginTop="-60px"/> */}
+                <Container className="container-fluid">
                     
-                    <Cloud src={cld01}/>
-                     
-                    
+                    <div className="row">
+                    <div className="col-12"> 
+                        <Cloud src={cld01}/>
                         <a href="#home"><Eggs src={eg4} left="24vw" top="10px" /></a>
                         <a href="#about"><Eggs src={eg1} left="36vw" top="10px" /></a>
                         <a href="#history"><Eggs src={eg3} left="48vw" top="10px" /></a>
                         <a href="#symbol"><Eggs src={eg5} left="60vw" top="10px" /></a>
                         <a href="#activity"><Eggs src={eg2} left="72vw" top="10px" /></a>
                     
+                    </div></div>
+                        
                     
                        
                     
